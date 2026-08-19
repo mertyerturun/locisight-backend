@@ -16,6 +16,10 @@ def dashboard():
     """B2B Yönetim panelini (Gelen leadleri listeleme) gösterir."""
     return render_template('dashboard.html')
 
+@api_bp.route('/health', methods=['GET'])
+def health_check():
+    """Sunucunun ayakta olup olmadığını kontrol eder."""
+    return jsonify({'durum': 'aktif', 'mesaj': 'Locisight sunucusu başarıyla çalışıyor.'}), 200
 
 @api_bp.route('/sohbet', methods=['POST'])
 def sohbet():
@@ -33,6 +37,7 @@ def sohbet():
         return jsonify({'basari': True, 'cevap': cevap}), 200
     except AIServiceError as e:
         return jsonify({'basari': False, 'hata': 'Asistan şu an yoğun, lütfen daha sonra tekrar deneyin.'}), 503
+
 
 @api_bp.route('/leads', methods=['POST'])
 def lead_kaydet():

@@ -19,8 +19,4 @@ def create_app():
     
     app.register_blueprint(api_bp, url_prefix='/api')
     
-    @app.route('/health')
-    def health_check():
-        return jsonify({'durum': 'aktif', 'mesaj': 'Locisight sunucusu başarıyla çalışıyor.'}), 200
-        
     return app
