@@ -24,3 +24,4 @@ Projeyi lokalinizde ayağa kaldırmak isterseniz:
    `python run.py`
 
 *Not: Uygulama şu an Render üzerinde canlıdadır.*
+Site: https://mertyerturun.wixstudio.com/locisight
