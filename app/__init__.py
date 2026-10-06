@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_cors import CORS
 from config import Config
 
@@ -14,9 +14,7 @@ def create_app():
         from app.database import init_db
         init_db()
         
-    from app.routes import pages_bp, api_bp
-    app.register_blueprint(pages_bp)
-    
+    from app.routes import api_bp
     app.register_blueprint(api_bp, url_prefix='/api')
     
     return app
