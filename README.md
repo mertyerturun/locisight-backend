@@ -10,6 +10,8 @@ clarify their priorities and connects them with a real estate expert.
 This repository contains the **backend REST API**. The user-facing website is built on
 [Wix](https://www.wix.com) and talks to this API over HTTP.
 
+**Live site:** https://mertyerturun.wixstudio.com/locisight
+
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Flask](https://img.shields.io/badge/flask-3.0-lightgrey)
 ![LLM](https://img.shields.io/badge/LLM-Groq-orange)

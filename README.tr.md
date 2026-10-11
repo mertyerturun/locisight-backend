@@ -10,6 +10,8 @@ yardımcı olur ve onları bir emlak uzmanıyla buluşturur.
 Bu repo projenin **backend REST API**'sini içerir. Kullanıcıların gördüğü web sitesi
 [Wix](https://www.wix.com) üzerinde geliştirilmiştir ve bu API ile HTTP üzerinden haberleşir.
 
+**Canlı site:** https://mertyerturun.wixstudio.com/locisight
+
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Flask](https://img.shields.io/badge/flask-3.0-lightgrey)
 ![LLM](https://img.shields.io/badge/LLM-Groq-orange)
